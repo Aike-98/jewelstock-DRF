@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% block head_title %}index{% endblock %}
+{% block body_title %}index{% endblock %}
+
+
+{% block content %}
+<p>
+    {% if request.user.is_authenticated %}
+    ようこそ {{ request.user.username }} さん
+    {% else %}
+    ログインしてください
+    {% endif %}
+</p>
+{% endblock %}
