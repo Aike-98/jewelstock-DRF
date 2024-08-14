@@ -23,7 +23,7 @@ from rest_framework import routers
 from jewelstock import views
 
 router = routers.DefaultRouter()
-router.register(r'products', views.ProductView, 'product')
+router.register(r'products', views.ProductView, 'products')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
